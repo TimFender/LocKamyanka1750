@@ -1,0 +1,200 @@
+/* Підключення автентичних шрифтів від Василя Чабанника https://abetkarutenia.com.ua/ */
+
+/* <h2> Шрифт Rutenia2008 */
+@font-face {
+  font-family: "Rutenia2008";
+  src: url("/fonts/Rutenia2008VasylChebanyk.woff2") format("woff2"),
+    url("/fonts/Rutenia2008VasylChebanyk.woff") format("woff");
+}
+
+/* <h1> Шрифт RuteniaDecor */
+@font-face {
+  font-family: "RuteniaDecor";
+  src: url("/fonts/RuteniaDecor.woff2") format(".woff2"),
+    url("/fonts/RuteniaDecor\ Regular.otf") format("opentype"),
+    url("/fonts/RuteniaDecore.woff") format(".woff");
+}
+
+/* <p> Шрифт Rutenia2008Arial */
+@font-face {
+  font-family: "Rutenia2009Arial";
+  src: url("/fonts/RuteniaArial2009VasylChebanyk.woff2") format("woff2"),
+    url("/fonts/RuteniaArial2009VasylChebanyk.woff") format("woff");
+}
+/* ----------------------------------------------------------------------------- */
+h1 {
+  font-family: "RuteniaDecor";
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rutenia2008";
+}
+
+p,
+span {
+  font-family: "Rutenia2009Arial";
+}
+
+/* HEADER CLASS HEADER */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.232);
+  border-radius: 0 0 7px 7px;
+  z-index: 100;
+  padding: 10px;
+  box-shadow: 0px 1px 10px 0px #000000;
+}
+/* НАВІГАЦІЙНЕ МЕНЮ */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0 20px 0 20px;
+}
+
+.navbar-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "RuteniaDecor";
+  font-size: 22px;
+  text-decoration: none;
+  color: aliceblue; /* Задайте цвет текста для неактивных ссылок */
+  transition: color 0.4s ease; /* Плавний перехід кольору тексту */
+  text-shadow: -6px 2px 6px #000000;
+}
+/* Стилі для плавного переходу кольору тексту при наведенні */
+.navbar-link:hover {
+  color: rgb(102, 177, 241); /* Задайте цвет текста при наведении */
+}
+.logo-link {
+  display: block;
+}
+/* Стилі для псевдоелемента, який створює полоску */
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Висота полоски */
+  background-color: yellow; /* Колір полоски */
+  transform: scaleX(0); /* По замовчуванню ширина полоски - 0 */
+  transform-origin: bottom left;
+  transition: transform 0.4s ease; /* Плавний перехід при наведенні */
+}
+/* Стилі для полоски при наведенні на пункт меню */
+.navbar-link:hover::after {
+  transform: scaleX(1); /* Збільшення ширини полоски при наведенні */
+}
+.logo-img {
+  max-height: 50px;
+  border-radius: 7px;
+  filter: drop-shadow(0px 0px 2px #000000);
+}
+.sign {
+  display: flex;
+  gap: 20px;
+}
+.sign-link,
+.registered-link {
+  font-family: "Rutenia2009Arial";
+  color: whitesmoke;
+  font-size: 16px;
+  padding: 10px 15px;
+  text-align: center;
+}
+.sign-link,
+.registered-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0080ff; /* Задаємо колір фону кнопок */
+  color: #fff; /* Задаємо колір тексту */
+  border-radius: 7px; /* Закруглюємо кути кнопок */
+  transition: background-color 0.7s ease; /* Плавний перехід кольору фону при наведенні */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.sign-link:hover,
+.registered-link:hover {
+  background-color: #e8dd08; /* Колір фону при наведенні */
+  color: black;
+  font-weight: 600;
+}
+
+/* ОСНОВНА ОБОЛОНКА WRAPPER-STYLE */
+.wrapper-style {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MAIN CLASS MAIN */
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex: 1 1 auto;
+}
+
+/* FOOTER CLASS FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  /* background-image: ; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #212121;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px -10px 20px,
+    rgba(0, 0, 0, 0.23) 0px -6px 6px;
+  border-top: 1px solid black;
+}
+.footer__social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+.social-icon img {
+  width: 50px; /* Ширина іконок */
+  height: 50px; /* Висота іконок */
+}
+
+.head__footer {
+  text-align: center;
+  color: aliceblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.head__footer h3 {
+  color: aliceblue;
+  font-size: 30px;
+}
+.down__footer {
+  color: aliceblue;
+  text-align: left;
+  background-color: #161616;
+  padding: 20px;
+}
+.down__footer p {
+  color: aliceblue;
+  font-size: 20px;
+}
