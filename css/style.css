@@ -1,8 +1,8 @@
 
 @font-face {
   font-family: "Rutenia2008";
-  src: url("fonts/Rutenia2008VasylChebanyk.woff2") format("woff2"),
-    url("fonts/Rutenia2008VasylChebanyk.woff") format("woff");
+  src: url("..\fonts/Rutenia2008VasylChebanyk.woff2") format("woff2"),
+    url("..\fonts/Rutenia2008VasylChebanyk.woff") format("woff");
 }
 
 @font-face {
