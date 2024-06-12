@@ -1,21 +1,21 @@
 
 @font-face {
   font-family: "Rutenia2008";
-  src: url("..\fonts/Rutenia2008VasylChebanyk.woff2") format("woff2"),
-    url("..\fonts/Rutenia2008VasylChebanyk.woff") format("woff");
+  src: url("../fonts/Rutenia2008VasylChebanyk.woff2") format("woff2"),
+       url("../fonts/Rutenia2008VasylChebanyk.woff") format("woff");
 }
 
 @font-face {
   font-family: "RuteniaDecor";
-  src: url("..\fonts/RuteniaDecor.woff2") format(".woff2"),
-    url("..\fonts/RuteniaDecor\Regular.otf") format("opentype"),
-    url("..\fonts/RuteniaDecore.woff") format(".woff");
+  src: url("../fonts/RuteniaDecor.woff2") format("woff2"),
+       url("../fonts/RuteniaDecor/Regular.otf") format("opentype"),
+       url("../fonts/RuteniaDecor.woff") format("woff");
 }
 
 @font-face {
   font-family: "Rutenia2009Arial";
-  src: url("..\fonts/RuteniaArial2009VasylChebanyk.woff2") format("woff2"),
-    url("..\fonts/RuteniaArial2009VasylChebanyk.woff") format("woff");
+  src: url("../fonts/RuteniaArial2009VasylChebanyk.woff2") format("woff2"),
+       url("../fonts/RuteniaArial2009VasylChebanyk.woff") format("woff");
 }
 /* ----------------------------------------------------------------------------- */
 h1 {
